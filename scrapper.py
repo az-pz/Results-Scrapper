@@ -15,7 +15,7 @@ while(roll<110112100):
             browser.find_by_xpath('//select[@id="Dt1"]/option[@value="96"]')._element.click()
             
             name=iframe.find_by_id('LblName')
-            #gpa=iframe.find_by_id('LblGPA')
+            gpa=iframe.find_by_id('LblGPA')
             
             data.update({roll:gpa.value})
             print roll, "done"
